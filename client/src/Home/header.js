@@ -1,8 +1,13 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Menupage from "../Component/menupage";
+import Category from "./category";
+import Hero from "./hero";
+import Products from "../Component/mainpages/products/products";
+import Blog from "./blog";
 function header() {
   return (
+    <>
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
@@ -60,6 +65,11 @@ function header() {
         <i class="fa fa-bars"></i>
       </div>
     </div>
+    <Hero/>
+    <Category/>
+    <Products/>
+    {/* <Blog/> */}
+    </>
   );
 }
 

@@ -12,8 +12,7 @@ function home() {
       <Sidebar />
       <main className="main-wrap">
       <Header />
-      <Hero />
-      <Category />
+     <Blog/>
       <Footer />
       </main>
     </div>

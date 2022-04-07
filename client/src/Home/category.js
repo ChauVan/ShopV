@@ -1,71 +1,68 @@
 import React from "react";
-import Products from "../Component/mainpages/products/products";
+import FeaturedProduct from "./FeaturedProduct";
 function category() {
   return (
-    <div>
-      <div>
-        <div class="latest-product__slider owl-carousel">
-          <div class="latest-prdouct__slider__item">
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-1.jpg" alt="" />
+    <>
+     <section className="categories">
+       <div className="container">
+         <div className="row">
+           <div className="categories__slider owl-carousel">
+             <div className="col-lg-3">
+               <div
+                className="categories__item set-bg"
+                data-setbg="assets/img/categories/cat-1.jpg"
+              >
+                <h5>
+                  <a href="#">Iphone</a>
+                </h5>
               </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
+            </div>
+            <div className="col-lg-3">
+              <div
+                className="categories__item set-bg"
+                data-setbg="assets/img/categories/cat-2.jpg"
+              >
+                <h5>
+                  <a href="#">Samsung</a>
+                </h5>
               </div>
-            </a>
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-2.jpg" alt="" />
+            </div>
+            <div className="col-lg-3">
+              <div
+                className="categories__item set-bg"
+                data-setbg="assets/img/categories/cat-3.jpg"
+              >
+                <h5>
+                  <a href="#">Xiaomi</a>
+                </h5>
               </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
+            </div>
+            <div className="col-lg-3">
+              <div
+                className="categories__item set-bg"
+                data-setbg="assets/img/categories/cat-4.jpg"
+              >
+                <h5>
+                  <a href="#">Vivo</a>
+                </h5>
               </div>
-            </a>
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-3.jpg" alt="" />
+            </div>
+            <div className="col-lg-3">
+              <div
+                className="categories__item set-bg"
+                data-setbg="assets/img/categories/cat-5.jpg"
+              >
+                <h5>
+                  <a href="#">VSmart</a>
+                </h5>
               </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
-              </div>
-            </a>
-          </div>
-          <div class="latest-prdouct__slider__item">
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-1.jpg" alt="" />
-              </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
-              </div>
-            </a>
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-2.jpg" alt="" />
-              </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
-              </div>
-            </a>
-            <a href="#" class="latest-product__item">
-              <div class="latest-product__item__pic">
-                <img src="assets/img/latest-product/lp-3.jpg" alt="" />
-              </div>
-              <div class="latest-product__item__text">
-                <h6>Crab Pool Security</h6>
-                <span>$30.00</span>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <FeaturedProduct/>
+    </>
   );
 }
 
