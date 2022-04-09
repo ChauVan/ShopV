@@ -1,6 +1,8 @@
 import React, { useReducer, useState } from "react";
 import { Link } from "react-router-dom";
-// import axios from 'axios'
+import axios from 'axios'
+import Sidebar from "../../include/sidebar";
+import Footer from "../../include/footer";
 function Register() {
   // const[(user, setUser)] = useState({
   // name:"",
@@ -25,6 +27,8 @@ function Register() {
   // }
 
   return (
+    <>
+    <Sidebar/>
     <div className="login-page">
       <form
       // onSubmit={registerSubmit}
@@ -55,10 +59,12 @@ function Register() {
         <div className="row">
           <button type="submit">Đăng Ký</button>
           <Link to="/login">Đăng Nhập</Link>
-          <Link to='/'> Trang Chủ</Link>
+         
         </div>
       </form>
     </div>
+    <Footer/>
+    </>
   );
 }
 
