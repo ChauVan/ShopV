@@ -1,10 +1,8 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import Menupage from "../Home/menupage"
 import Category from "./category";
 import Hero from "./hero";
 import Products from "../mainpages/products/products";
-import Blog from "./blog";
+// import Listproduct from "../../APi/listproduc";
 function header() {
   return (
     <>
@@ -12,6 +10,7 @@ function header() {
     <Hero/>
     <Category/>
     <Products/>
+  
     {/* <Blog/> */}
     </>
   );
