@@ -13,3 +13,5 @@ code {
 }
 /*---------------Login/Register-----------*/
 @import url("./Component/mainpages/auth/login.css");
+/* ---------------Product-----------*/ 
+ @import url("./Component/mainpages/products/productItem.css");
